@@ -18,3 +18,10 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+QMAKE_LFLAGS += -L/Users/dennis/SDKs/SDL2-2.0.4/built/lib -lSDL2
+
+LIBS += -framework Carbon -framework cocoa -framework IOKit -framework CoreAudio -framework CoreFoundation \
+    -framework AudioUnit -framework AudioToolbox -framework CoreVideo -framework ForceFeedback \
+      -liconv
+INCLUDEPATH += /Users/dennis/SDKs/SDL2-2.0.4/built/include
